@@ -5,13 +5,7 @@ export default function Products() {
     <section className="section" id="products">
       <h2 className="section-title">Featured Products</h2>
       <p className="section-subtitle">Discover our range of eco-sustainable hospitality solutions</p>
-      <div className="products-grid" style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(5, 1fr)', 
-        gap: '20px',
-        maxWidth: '1200px',
-        margin: '0 auto'
-      }}>
+      <div className="products-grid">
         <div className="product-card">
           <div className="product-image" style={{ 
             backgroundColor: '#f5f1e8', 

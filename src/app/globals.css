@@ -343,7 +343,7 @@ nav {
 /* Products Section */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
     margin-top: 35px;
 }
@@ -845,7 +845,29 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .nav-container,
+    .hero-content,
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -883,6 +905,11 @@ footer {
         font-size: 28px;
     }
 
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
     .about-content,
     .contact-container {
         grid-template-columns: 1fr;
@@ -907,7 +934,56 @@ footer {
 
     .products-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .tagline {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
 }
 
 /* Animations */
