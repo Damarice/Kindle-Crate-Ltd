@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Products() {
   return (
     <section className="section" id="products">
@@ -18,9 +20,11 @@ export default function Products() {
             overflow: 'hidden',
             height: '160px'
           }}>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop&crop=center" 
               alt="Organic Briquettes" 
+              width={300}
+              height={200}
               style={{ 
                 width: '100%', 
                 height: '100%', 
@@ -42,9 +46,11 @@ export default function Products() {
             overflow: 'hidden',
             height: '160px'
           }}>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop&crop=center" 
               alt="Fire Starters" 
+              width={300}
+              height={200}
               style={{ 
                 width: '100%', 
                 height: '100%', 
@@ -66,9 +72,11 @@ export default function Products() {
             overflow: 'hidden',
             height: '160px'
           }}>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=300&h=200&fit=crop&crop=center" 
               alt="Charcoal Grills" 
+              width={300}
+              height={200}
               style={{ 
                 width: '100%', 
                 height: '100%', 
@@ -90,9 +98,11 @@ export default function Products() {
             overflow: 'hidden',
             height: '160px'
           }}>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=300&h=200&fit=crop&crop=center" 
               alt="Premium Matchboxes" 
+              width={300}
+              height={200}
               style={{ 
                 width: '100%', 
                 height: '100%', 
@@ -114,9 +124,11 @@ export default function Products() {
             overflow: 'hidden',
             height: '160px'
           }}>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=300&h=200&fit=crop&crop=center" 
               alt="Fresh Farm Produce" 
+              width={300}
+              height={200}
               style={{ 
                 width: '100%', 
                 height: '100%', 
